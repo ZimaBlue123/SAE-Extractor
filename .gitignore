@@ -1,0 +1,38 @@
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and runtime artifacts
+*.log
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.*
+
+# Project outputs and local clinical data
+outputs/
+input_clinical_texts/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
