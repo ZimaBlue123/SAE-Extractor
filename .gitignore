@@ -9,6 +9,7 @@ build/
 dist/
 .pytest_cache/
 .mypy_cache/
+.pre-commit-cache/
 
 # Virtual env
 .venv/

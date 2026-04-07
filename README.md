@@ -142,3 +142,27 @@ python sae_extractor.py
 
 本项目采用 MIT License，详见 `LICENSE` 文件。
 
+## 10. 防误提交（敏感信息保护）
+
+项目已内置 `pre-commit` 配置和本地敏感信息扫描器，会在提交前检测：
+
+- `SAE_API_TOKEN="..."`
+- `Bearer ...`
+- `sk-...` 类密钥
+- 常见 `api_key/token/secret` 明文赋值
+
+启用方式：
+
+```powershell
+pip install -r requirements.txt
+pre-commit install
+```
+
+手动全量扫描：
+
+```powershell
+pre-commit run --all-files
+```
+
+若检测到疑似密钥，提交会被拒绝。请改为使用环境变量，不要把 Token 写入代码或文档。
+
