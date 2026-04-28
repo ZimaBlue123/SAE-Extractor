@@ -11,7 +11,7 @@
 
 输出核心字段：
 
-- `sae_term`
+- `SAE_term`
 - `onset_date`
 - `resolution_date`
 - `severity_grade`
@@ -33,7 +33,7 @@
 ## 2. 安装
 
 ```powershell
-cd "E:\Cursor Project\Sae-Extractor"
+cd "E:\Cursor Project\SAE-Extractor"
 python -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
@@ -53,8 +53,8 @@ $env:SAE_API_TOKEN="你的Token"
 ```powershell
 $env:SAE_API_BASE_URL="http://127.0.0.1:10984"
 $env:SAE_MODEL_ID="doubao-seed-2-0-pro-260215"
-$env:SAE_INPUT_DIR="E:\Cursor Project\Sae-Extractor\input_clinical_texts"
-$env:SAE_OUTPUT_DIR="E:\Cursor Project\Sae-Extractor\outputs"
+$env:SAE_INPUT_DIR="E:\Cursor Project\SAE-Extractor\input_clinical_texts"
+$env:SAE_OUTPUT_DIR="E:\Cursor Project\SAE-Extractor\outputs"
 ```
 
 OCR 工具可选配置：
@@ -112,7 +112,7 @@ python cli.py pdf-batch --input-dir ".\input_clinical_texts" --output ".\outputs
 单条测试（内置样本文本）：
 
 ```powershell
-python sae_extractor.py
+python SAE_extractor.py
 ```
 
 ## 6. 默认目录

@@ -56,7 +56,7 @@ class ClinicalDataGuard:
         你是一名严谨的临床医学数据审查专家。请从输入的非结构化临床病历或随访记录中，提取严重不良事件（SAE）的关键要素。
         必须严格且仅输出以下 JSON 结构，若文本中未提供对应信息，对应字段的值必须为 null。不要包含任何附加解释。
         {
-            "sae_term": "严重不良事件标准名称",
+            "SAE_term": "严重不良事件标准名称",
             "onset_date": "发生日期 (格式: YYYY-MM-DD)",
             "resolution_date": "转归日期 (格式: YYYY-MM-DD)",
             "severity_grade": "CTCAE 严重程度分级 (如: 3级, 4级)",
@@ -100,7 +100,7 @@ class ClinicalDataGuard:
         保证输出字段稳定：缺失字段补 null，避免下游导出列波动。
         """
         required_fields = [
-            "sae_term",
+            "SAE_term",
             "onset_date",
             "resolution_date",
             "severity_grade",

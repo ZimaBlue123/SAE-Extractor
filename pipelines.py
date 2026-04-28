@@ -15,7 +15,7 @@ from parsers import (
     parse_txt,
     ensure_parent_dir,
 )
-from sae_extractor import ClinicalDataGuard
+from SAE_extractor import ClinicalDataGuard
 from settings import Settings
 
 

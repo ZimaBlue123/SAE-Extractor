@@ -4,7 +4,7 @@ from pathlib import Path
 
 from parsers import configure_ocr
 from pipelines import PipelineIO, run_omni_batch, run_pdf_batch
-from sae_extractor import ClinicalDataGuard
+from SAE_extractor import ClinicalDataGuard
 from settings import check_environment, ensure_dirs, load_settings, resolve_default_output
 
 

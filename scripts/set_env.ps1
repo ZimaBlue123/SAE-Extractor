@@ -16,7 +16,7 @@ if ([string]::IsNullOrWhiteSpace($env:SAE_API_TOKEN)) {
 $env:SAE_API_BASE_URL = "http://127.0.0.1:10984"
 
 # 输出目录（你指定的路径）
-$env:SAE_OUTPUT_DIR = "E:\Cursor Project\Sae-Extractor\outputs"
+$env:SAE_OUTPUT_DIR = "E:\Cursor Project\SAE-Extractor\outputs"
 
 Write-Host "已设置：SAE_API_BASE_URL=$env:SAE_API_BASE_URL" -ForegroundColor Green
 Write-Host "已设置：SAE_OUTPUT_DIR=$env:SAE_OUTPUT_DIR" -ForegroundColor Green
